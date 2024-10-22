@@ -160,7 +160,5 @@ RenderView? _findImplicitRenderView() {
   if (implicitFlutterView == null) {
     return null;
   }
-  return WidgetsBinding.instance.renderViews
-      .where((RenderView v) => v.flutterView == implicitFlutterView)
-      .firstOrNull;
+  return WidgetsBinding.instance.renderView;
 }
